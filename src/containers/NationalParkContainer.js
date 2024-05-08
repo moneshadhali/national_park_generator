@@ -25,6 +25,9 @@ const NationalParkContainer = () => {
         <Route path="/" element={<Home activities={activities} />} />
         <Route path="/activity" element={<ActivityForm />} />
       </Routes>
+      <footer>
+        <p>Copyright © 2024. All rights reserved.</p>
+      </footer>
     </>
   );
 };
