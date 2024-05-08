@@ -1,4 +1,8 @@
-const Home = () => {
+const Home = ({ activities }) => {
+  const activityList = activities.data?.map((activity, index) => {
+    return <li key={index}>{activity.name}</li>;
+  });
+
   return (
     <>
       <section>
@@ -38,7 +42,7 @@ const Home = () => {
           Discover your perfect national park adventure by exploring the
           activities listed in the following section.
         </p>
-        <ul></ul>
+        <ul>{activities && activityList}</ul>
       </section>
     </>
   );
