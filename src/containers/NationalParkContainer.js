@@ -23,7 +23,10 @@ const NationalParkContainer = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home activities={activities} />} />
-        <Route path="/activity" element={<ActivityForm />} />
+        <Route
+          path="/activity"
+          element={<ActivityForm activities={activities} />}
+        />
       </Routes>
       <footer>
         <p>Copyright © 2024. All rights reserved.</p>
