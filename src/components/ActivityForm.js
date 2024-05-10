@@ -1,11 +1,11 @@
 import { useState } from "react";
 
-const ActivityForm = ({ activities }) => {
-  const [currentActivity, setCurrentActivity] = useState("Select an Activity");
+const ActivityForm = ({ activities, selectedActivity }) => {
+  const [currentActivity, setCurrentActivity] = useState();
 
   const options = activities.data?.map((activity, index) => {
     return (
-      <option value="activity.name" key={index}>
+      <option value={activity.id} key={index}>
         {activity.name}
       </option>
     );
@@ -13,7 +13,7 @@ const ActivityForm = ({ activities }) => {
 
   const handleFormSubmit = (event) => {
     event.preventDefault();
-    // setCurrentActivity(event.target.value);
+    selectedActivity(currentActivity);
   };
 
   return (
@@ -33,6 +33,9 @@ const ActivityForm = ({ activities }) => {
           defaultValue={currentActivity}
           onChange={(e) => setCurrentActivity(e.target.value)}
         >
+          <option disabled value="select-estate">
+            Choose an activity
+          </option>
           {options}
         </select>
         <input type="submit" value="Submit" />

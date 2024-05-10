@@ -5,6 +5,7 @@ import { Routes, Route } from "react-router-dom";
 import { useEffect, useState } from "react";
 const NationalParkContainer = () => {
   const [activities, setActivities] = useState([]);
+  const [selectedParks, setSelectedParks] = useState();
 
   const fetchActivities = async () => {
     const response = await fetch(
@@ -12,6 +13,14 @@ const NationalParkContainer = () => {
     );
     const data = await response.json();
     setActivities(data);
+  };
+
+  const selectedActivity = async (parkID) => {
+    const response = await fetch(
+      `https://developer.nps.gov/api/v1/activities/parks?id=${parkID}&api_key=${process.env.REACT_APP_API_KEY}`
+    );
+    const data = await response.json();
+    setSelectedParks(data);
   };
 
   useEffect(() => {
@@ -25,7 +34,12 @@ const NationalParkContainer = () => {
         <Route path="/" element={<Home activities={activities} />} />
         <Route
           path="/activity"
-          element={<ActivityForm activities={activities} />}
+          element={
+            <ActivityForm
+              activities={activities}
+              selectedActivity={selectedActivity}
+            />
+          }
         />
       </Routes>
       <footer>
