@@ -16,4 +16,5 @@ Wireframe:
 
 Component Diagram:
 
-![image](https://github.com/moneshadhali/national_park_generator/assets/99983599/d955f0af-90a4-4b82-867b-aaa9b2e79d0d)
+![image](https://github.com/moneshadhali/national_park_generator/assets/99983599/8118159d-fe0f-4fc3-bca4-ea22a47c5160)
+
