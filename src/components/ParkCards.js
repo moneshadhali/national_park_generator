@@ -1,11 +1,20 @@
+import { useNavigate } from "react-router-dom";
+
 const ParkCards = ({ selectedParks }) => {
+  const navigate = useNavigate();
   const card = selectedParks.data?.map((items) => {
     return items.parks.map((park, index) => {
       return (
         <div className="card" key={index}>
-          <p>{park.url}</p>
-          <p>{park.fullName}</p>
-          <p>{park.designation}</p>
+          <p>
+            <span>Designation:</span> {park.url}
+          </p>
+          <p>
+            <span>Name:</span> {park.fullName}
+          </p>
+          <p>
+            <span>URL:</span> {park.designation}
+          </p>
         </div>
       );
     });
@@ -13,6 +22,9 @@ const ParkCards = ({ selectedParks }) => {
 
   return (
     <>
+      <button onClick={() => navigate("/activity")}>
+        Choose Activity Again
+      </button>
       <section className="cardContainer">{card}</section>
     </>
   );
