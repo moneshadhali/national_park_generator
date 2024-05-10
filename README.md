@@ -9,7 +9,8 @@ https://www.nps.gov/subjects/developer/api-documentation.htm
 
 Wireframe:
 
-![image](https://github.com/moneshadhali/national_park_generator/assets/99983599/a7d3b570-deb6-443e-80da-ab59cd674021)
+![image](https://github.com/moneshadhali/national_park_generator/assets/99983599/f2c1d366-90d6-4260-92e3-8d98b44fc3c8)
+
 
 
 
