@@ -1,7 +1,9 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const ActivityForm = ({ activities, selectedActivity }) => {
   const [currentActivity, setCurrentActivity] = useState();
+  const navigate = useNavigate();
 
   const options = activities.data?.map((activity, index) => {
     return (
@@ -14,6 +16,7 @@ const ActivityForm = ({ activities, selectedActivity }) => {
   const handleFormSubmit = (event) => {
     event.preventDefault();
     selectedActivity(currentActivity);
+    navigate("/parks");
   };
 
   return (
