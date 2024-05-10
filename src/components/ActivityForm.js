@@ -1,4 +1,8 @@
+import { useState } from "react";
+
 const ActivityForm = ({ activities }) => {
+  const [currentActivity, setCurrentActivity] = useState("Select an Activity");
+
   const options = activities.data?.map((activity, index) => {
     return (
       <option value="activity.name" key={index}>
@@ -6,6 +10,11 @@ const ActivityForm = ({ activities }) => {
       </option>
     );
   });
+
+  const handleFormSubmit = (event) => {
+    event.preventDefault();
+    // setCurrentActivity(event.target.value);
+  };
 
   return (
     <>
@@ -16,14 +25,17 @@ const ActivityForm = ({ activities }) => {
         Take the leap into exploration by randomly selecting a park location
         card from the deck.
       </p>
-      <form action="">
+      <form onSubmit={handleFormSubmit}>
+        <label htmlFor="activityOptions"></label>
         <select
-          name="activities
-        "
-          id=""
+          name="activityOptions"
+          id="activityOptions"
+          defaultValue={currentActivity}
+          onChange={(e) => setCurrentActivity(e.target.value)}
         >
           {options}
         </select>
+        <input type="submit" value="Submit" />
       </form>
     </>
   );
