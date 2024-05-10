@@ -4,6 +4,7 @@ import ActivityForm from "../components/ActivityForm";
 import { Routes, Route } from "react-router-dom";
 import { useEffect, useState } from "react";
 import ParkCards from "../components/ParkCards";
+
 const NationalParkContainer = () => {
   const [activities, setActivities] = useState([]);
   const [selectedParks, setSelectedParks] = useState({});

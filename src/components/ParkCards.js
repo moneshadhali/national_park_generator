@@ -25,7 +25,7 @@ const ParkCards = ({ selectedParks }) => {
       <button onClick={() => navigate("/activity")}>
         Choose Activity Again
       </button>
-      <section className="cardContainer">{card}</section>
+      {selectedParks ? <section className="cardContainer">{card}</section> : ""}
     </>
   );
 };
