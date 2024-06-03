@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navigation Bar  */
 nav {
   background-color: #283618;
   padding: 1rem 4rem;
@@ -27,4 +34,12 @@ nav a {
 nav a:hover {
   background-color: rgba(221, 161, 94, 0.2);
   color: #fefae0;
+}
+
+/* Footer  */
+footer {
+  background-color: #283618;
+  padding: 1rem 2rem;
+  color: #dda15e;
+  margin-top: auto;
 }
