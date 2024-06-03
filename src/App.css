@@ -3,3 +3,28 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+nav {
+  background-color: #283618;
+  padding: 1rem 4rem;
+}
+
+nav ul {
+  list-style-type: none;
+}
+nav li {
+  display: inline;
+  /* padding-right: 1rem; */
+  font-size: 1.2rem;
+}
+
+nav a {
+  color: #dda15e;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+nav a:hover {
+  background-color: rgba(221, 161, 94, 0.2);
+  color: #fefae0;
+}
