@@ -20,9 +20,8 @@ const ActivityForm = ({ activities, selectedActivity }) => {
   };
 
   return (
-    <>
-      <h2>Form</h2>
-      <h4>National Park Activity Selector</h4>
+    <div className="activityForm">
+      <h2>National Park Activity Selector</h2>
       <p>
         Pick from a diverse range of park activities to generate a card pack.
         Take the leap into exploration by randomly selecting a park location
@@ -43,7 +42,7 @@ const ActivityForm = ({ activities, selectedActivity }) => {
         </select>
         <input type="submit" value="Submit" />
       </form>
-    </>
+    </div>
   );
 };
 
