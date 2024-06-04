@@ -38,7 +38,6 @@ nav a:hover {
 
 /* Home */
 section {
-  /* min-height: 95vh; */
   padding: 0 2rem;
   background-color: #fefae0;
   color: #1b4332;
@@ -52,6 +51,22 @@ section {
   color: #fefae0;
   background-image: url(images/home.jpg);
   background-size: cover;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  padding-top: 2.5rem;
+}
+section p {
+  padding: 0.5rem 0;
+}
+
+section ul {
+  margin-left: 1rem;
+  padding-bottom: 2rem;
 }
 
 /* Footer  */
