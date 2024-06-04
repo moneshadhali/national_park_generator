@@ -5,7 +5,7 @@ const Home = ({ activities }) => {
 
   return (
     <>
-      <section>
+      <section className="welcome">
         <h1>Welcome to the Random National Park (US) Generator!</h1>
       </section>
       <section>

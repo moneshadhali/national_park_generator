@@ -12,8 +12,9 @@
 
 /* Navigation Bar  */
 nav {
-  background-color: #283618;
+  background-color: #081c15;
   padding: 1rem 4rem;
+  min-height: 5vh;
 }
 
 nav ul {
@@ -35,9 +36,27 @@ nav a:hover {
   color: #fefae0;
 }
 
+/* Home */
+section {
+  /* min-height: 95vh; */
+  padding: 0 2rem;
+  background-color: #fefae0;
+  color: #1b4332;
+}
+
+.welcome {
+  min-height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fefae0;
+  background-image: url(images/home.jpg);
+  background-size: cover;
+}
+
 /* Footer  */
 footer {
-  background-color: #283618;
+  background-color: #081c15;
   padding: 1rem 2rem;
   color: #dda15e;
   margin-top: auto;
