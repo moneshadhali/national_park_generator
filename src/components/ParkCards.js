@@ -6,15 +6,20 @@ const ParkCards = ({ selectedParks }) => {
     return items.parks.map((park, index) => {
       return (
         <div className="card" key={index}>
-          <p>
-            <span>Designation:</span> {park.url}
-          </p>
-          <p>
-            <span>Name:</span> {park.fullName}
-          </p>
-          <p>
-            <span>URL:</span> {park.designation}
-          </p>
+          <div className="card-inner">
+            <div className="card-front"></div>
+            <div className="card-back">
+              <p>
+                <span>Designation:</span> {park.designation}
+              </p>
+              <p>
+                <span>Name:</span> {park.fullName}
+              </p>
+              <p>
+                <span>URL:</span> {park.url}
+              </p>
+            </div>
+          </div>
         </div>
       );
     });

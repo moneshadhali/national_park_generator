@@ -70,7 +70,7 @@ section ul {
   padding-bottom: 2rem;
 }
 
-/* Activity Form  */
+/* Activity Form & Results */
 .activityForm {
   padding: 1rem 1.2rem;
 }
@@ -115,6 +115,79 @@ button:hover {
 .activity-btn {
   margin: 0rem auto;
   margin-top: 2rem;
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  position: relative;
+  width: 12rem;
+  height: 14rem;
+  margin: 1rem 1rem 0 0;
+}
+
+.card,
+.card-inner,
+.card-front,
+.card-back {
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+.card-inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.4s ease-in;
+  background-color: #dfb07a;
+  border: 1px solid #fefae0;
+  -webkit-transition: all 0.4s ease-in;
+  -moz-transition: all 0.4s ease-in;
+  -ms-transition: all 0.4s ease-in;
+  -o-transition: all 0.4s ease-in;
+}
+
+.card-inner:hover {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+}
+
+.card-front {
+  background-image: url(images/forest.jpg);
+  background-size: cover;
+}
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.card-back {
+  overflow-wrap: break-word;
+  overflow-y: auto;
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+}
+
+.card-back span {
+  font-weight: bold;
 }
 
 /* Footer  */
