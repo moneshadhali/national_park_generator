@@ -9,7 +9,7 @@
 
 <a id="introduction"></a>
 ### Introduction
-
+This React app is designed to help user discover all the available national park based on user preferred activities. The filtered result is displayed in a card of decks from which user can randomly choose a national park and find more about it through the provided url. This app make use of external api [Abstract API](https://www.nps.gov/subjects/developer/api-documentation.htm).
 
 <a id="installation"></a>
 ### Installation Instruction
