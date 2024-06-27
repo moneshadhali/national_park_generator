@@ -9,7 +9,7 @@
 
 <a id="introduction"></a>
 ### Introduction
-This React app is designed to help user discover all the available national park based on user preferred activities. The filtered result is displayed in a card of decks from which user can randomly choose a national park and find more about it through the provided url. This app make use of external api [from this website](https://www.nps.gov/subjects/developer/api-documentation.htm).
+This React app helps users discover national parks based on their preferred activities. The filtered results are displayed in a deck of cards, allowing users to randomly select a park and learn more about it through the provided URL. The app utilizes an external API from [this website](https://www.nps.gov/subjects/developer/api-documentation.htm). Let the Random National Park Generator be your gateway to exploration and discovery in the great outdoors!
 
 <a id="installation"></a>
 ### Installation Instruction
