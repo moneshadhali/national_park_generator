@@ -9,14 +9,14 @@
 
 <a id="introduction"></a>
 ### Introduction
-This React app is designed to help user discover all the available national park based on user preferred activities. The filtered result is displayed in a card of decks from which user can randomly choose a national park and find more about it through the provided url. This app make use of external api [Abstract API](https://www.nps.gov/subjects/developer/api-documentation.htm).
+This React app is designed to help user discover all the available national park based on user preferred activities. The filtered result is displayed in a card of decks from which user can randomly choose a national park and find more about it through the provided url. This app make use of external api [from this website](https://www.nps.gov/subjects/developer/api-documentation.htm).
 
 <a id="installation"></a>
 ### Installation Instruction
 1. Clone the repository to your local machine  `git clone project_link`.
 2. Navigate to the project directory (in the terminal).
 3. Create a `.env` file inside the project file structure.
-4. Obtain an API key from [Abstract API](https://www.nps.gov/subjects/developer/api-documentation.htm).
+4. Obtain an API key from [this website](https://www.nps.gov/subjects/developer/api-documentation.htm).
 5. Paste this command in the `.env` file: `REACT_APP_API_KEY = Your_API_key`.
 6. Replace `Your_API_key` with your own unique key.
 7. Install dependencies using `npm install`.
