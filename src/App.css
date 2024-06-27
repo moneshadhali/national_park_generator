@@ -120,6 +120,7 @@ button:hover {
 .cardContainer {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 2.5rem;
 }
 
 .card {
